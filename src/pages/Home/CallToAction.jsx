@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/ui/Button";
-import "./CallToAction.css";g
+import "./CallToAction.css";
 
 const CallToAction = () => {
   const navigate = useNavigate();
