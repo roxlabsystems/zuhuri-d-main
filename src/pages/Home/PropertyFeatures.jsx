@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import './propertyfeatures.css'
+import './PropertyFeatures.css'
 
 const PropertyFeatures = (props) => {
   const [activeTab, setActiveTab] = useState(0)
