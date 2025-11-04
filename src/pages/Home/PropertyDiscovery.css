@@ -1,0 +1,146 @@
+.property-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+  background-color: #f7f8fc; /* Zuhuri light tone */
+  font-family: 'League Spartan', sans-serif;
+}
+
+.property-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.property-header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.property-title {
+  color: #1e1b54;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.property-subtext {
+  color: #444;
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+.property-button-wrap {
+  margin-top: 1rem;
+}
+
+.property-btn {
+  background-color: #1e1b54;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.property-btn:hover {
+  background-color: #343078;
+}
+
+/* Cards Grid */
+.property-cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.property-card {
+  position: relative;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  border: none;
+  border-radius: 0;
+}
+
+.property-card:hover {
+  transform: scale(1.02);
+}
+
+.property-card-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1e1b54;
+  margin-bottom: 0.5rem;
+}
+
+.property-card-desc {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.property-card-num {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e1b54;
+  opacity: 0.2;
+}
+
+/* Zuhuri accents */
+.accent1 {
+  background-color: #f2f3ff;
+}
+
+.accent2 {
+  background-color: #e8eaff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .property-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .property-header {
+    align-items: center;
+    text-align: center;
+  }
+  .property-subtext {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .property-title {
+    font-size: 32px;
+  }
+  .property-card-title {
+    font-size: 24px;
+  }
+  .property-card-desc {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 479px) {
+  .property-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,99 @@
+.services-section {
+  position: relative;
+  width: 100%;
+  padding: 5rem 1rem;
+  background: transparent;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+/* Background tilted rectangles */
+.services-bg-back {
+  position: absolute;
+  top: -10px; 
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 950px;
+  min-height: 600px;
+  background: #d6d3e9;
+  border-radius: 8px;
+  z-index: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.services-bg-front {
+  position: absolute;
+  top: 0; /* lifted front card as well */
+  left: 50%;
+  transform: translateX(-50%) rotate(2deg);
+  width: 950px;
+  min-height: 600px;
+  background: #1e1b54;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+/* Foreground content */
+.services-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.2rem 2.5rem 3rem; /* reduced top padding to pull text up */
+  color: #ffffff;
+  text-align: left;
+}
+
+.services-content h2 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.2;
+  color: goldenrod;
+}
+
+.services-content p {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.4rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .services-bg-back,
+  .services-bg-front {
+    width: 90%;
+    min-height: 700px;
+  }
+
+  .services-content {
+    padding: 1.2rem 2rem 3rem; /* maintain lifted text */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-bg-back,
+  .services-bg-front {
+    width: 95%;
+    min-height: 850px;
+  }
+
+  .services-content {
+    padding: 1rem 1.5rem 2.5rem;
+  }
+
+  .services-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .services-content p {
+    font-size: 0.95rem;
+  }
+}

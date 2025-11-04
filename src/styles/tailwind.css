@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Brand Colors */
+    --primary-background: #1e1b54;
+    --primary-foreground: #ffffff;
+    --primary-light: #1e1b540c;
+    --primary-medium: #1e1b545e;
+    --primary-dark: #1e1b54e5;
+
+    /* Secondary Brand Colors */
+    --secondary-background: #f3c225;
+    --secondary-foreground: #1e1b54;
+    --secondary-light: #ffffffe2;
+    --secondary-dark: #27245b;
+
+    /* Text Colors */
+    --text-primary: #000000;
+    --text-secondary: #1e1b54;
+    --text-muted: #1e1b54d3;
+    --text-accent: #f3c225;
+    --text-light: #ffffff;
+    --text-neutral: #423f6f;
+    --text-subtle: #9e9db5;
+
+    /* Background Colors */
+    --bg-main: #ffffff;
+    --bg-overlay: #1e1b546d;
+    --bg-section: #1e1b540c;
+    --bg-card: #ffffff;
+
+    /* Border Colors */
+    --border-primary: #1e1b54;
+
+    /* Component Colors */
+    --header-bg: #1e1b54;
+    --header-text: #ffffff;
+    --button-primary-bg: #f3c225;
+    --button-primary-text: #1e1b54;
+    --button-secondary-bg: #1e1b54;
+    --button-secondary-text: #ffffff;
+
+    /* Typography Variables */
+    --font-size-base: 20px;
+    --font-size-lg: 24px;
+    --font-size-xl: 32px;
+    --font-size-2xl: 36px;
+    --font-size-3xl: 48px;
+    --font-size-4xl: 96px;
+
+    /* Font Weight Variables */
+    --font-weight-thin: 100;
+    --font-weight-light: 200;
+    --font-weight-normal: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+
+    /* Line Height Variables */
+    --line-height-tight: 18px;
+    --line-height-snug: 19px;
+    --line-height-normal: 22px;
+    --line-height-relaxed: 24px;
+    --line-height-loose: 30px;
+    --line-height-extra: 45px;
+
+    /* Spacing Variables */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    --spacing-2xl: 24px;
+    --spacing-3xl: 32px;
+    --spacing-4xl: 48px;
+    --spacing-5xl: 64px;
+    --spacing-6xl: 96px;
+
+    /* Border Radius Variables */
+    --radius-sm: 10px;
+    --radius-md: 20px;
+    --radius-lg: 22px;
+    --radius-xl: 26px;
+    --radius-2xl: 30px;
+
+    /* Border Width Variables */
+    --border-width: 1px;
+  }
+}

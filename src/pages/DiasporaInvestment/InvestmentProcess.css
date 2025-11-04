@@ -1,0 +1,123 @@
+.investment-section {
+  position: relative;
+  width: 100%;
+  padding: 8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title section above card */
+.investment-header {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.investment-header h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1E1B54;
+  line-height: 1.2;
+}
+
+/* Card base */
+.investment-card-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background tilted rectangles */
+.investment-bg-back {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2.5deg);
+  width: 1000px;
+  min-height: 700px;
+  background: #d6d3e9;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.investment-bg-front {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2.5deg);
+  width: 1000px;
+  min-height: 700px;
+  background: #1e1b54;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+/* Foreground content */
+.investment-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 3rem 2.5rem 4rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+.investment-step h3 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  color: #FFD700;
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.investment-step p {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .investment-bg-back,
+  .investment-bg-front {
+    width: 90%;
+    min-height: 850px;
+  }
+
+  .investment-content {
+    padding: 2rem 2rem 3rem;
+  }
+
+  .investment-header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .investment-bg-back,
+  .investment-bg-front {
+    width: 95%;
+    min-height: 950px;
+  }
+
+  .investment-content {
+    padding: 1.8rem 1.5rem 2.5rem;
+  }
+
+  .investment-step h3 {
+    font-size: 1.3rem;
+  }
+
+  .investment-step p {
+    font-size: 1rem;
+  }
+}

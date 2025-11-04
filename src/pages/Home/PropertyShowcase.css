@@ -1,0 +1,51 @@
+.scroll-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  gap: 1rem;
+}
+
+/* Duplicate content for seamless looping */
+.scroll-content {
+  display: flex;
+  gap: 1rem;
+  animation: scroll-left 30s linear infinite;
+}
+
+.scroll-row.scroll-right .scroll-content {
+  animation: scroll-right 35s linear infinite;
+}
+
+/* Left to Right */
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Right to Left */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: smooth hover pause */
+.scroll-row:hover .scroll-content {
+  animation-play-state: paused;
+}
+
+.scroll-content img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
