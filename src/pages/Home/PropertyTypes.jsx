@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './propertytypes.css';
+import './PropertyTypes.css';
 
 const PropertyTypes = () => {
   const [activeTab, setActiveTab] = useState(0);
